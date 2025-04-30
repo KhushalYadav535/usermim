@@ -3,7 +3,7 @@ import { FaGoogle, FaFacebook, FaTwitter } from 'react-icons/fa';
 import '../styles/SocialLogin.css';
 
 const SocialLogin = () => {
-  const BACKEND_URL = import.meta.env.VITE_BACKEND_URL || 'http://localhost:5000';
+  const BACKEND_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:5000';
 
   const handleSocialLogin = (provider) => {
     window.location.href = `${BACKEND_URL}/api/auth/${provider}`;
